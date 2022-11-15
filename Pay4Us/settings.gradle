@@ -1,0 +1,3 @@
+rootProject.name = 'Pay4Us'
+
+includeFlat 'Pay4UsJPA'
