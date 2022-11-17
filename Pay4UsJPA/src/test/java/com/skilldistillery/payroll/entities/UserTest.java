@@ -24,7 +24,7 @@ class UserTest {
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		emf = Persistence.createEntityManagerFactory("JPAIntersteller");
+		emf = Persistence.createEntityManagerFactory("Pay4UsJPA");
 	}
 
 	@AfterAll

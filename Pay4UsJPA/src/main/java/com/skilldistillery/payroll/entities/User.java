@@ -14,11 +14,10 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
-	private String email;
 	  private String username;
 	  private String password;
 	  private String role;
-	  private boolean active;
+	  private boolean enabled;
 	  
 	  
 	public User() {
@@ -36,14 +35,6 @@ public class User {
 	}
 
 
-	public String getEmail() {
-		return email;
-	}
-
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
 
 
 	public String getUsername() {
@@ -76,13 +67,13 @@ public class User {
 	}
 
 
-	public boolean isActive() {
-		return active;
+	public boolean isEnabled() {
+		return enabled;
 	}
 
 
-	public void setActive(boolean active) {
-		this.active = active;
+	public void setEnabled(boolean active) {
+		this.enabled = active;
 	}
 
 
@@ -110,8 +101,6 @@ public class User {
 		StringBuilder builder = new StringBuilder();
 		builder.append("User [id=");
 		builder.append(id);
-		builder.append(", email=");
-		builder.append(email);
 		builder.append(", username=");
 		builder.append(username);
 		builder.append(", password=");
@@ -119,7 +108,7 @@ public class User {
 		builder.append(", role=");
 		builder.append(role);
 		builder.append(", active=");
-		builder.append(active);
+		builder.append(enabled);
 		builder.append("]");
 		return builder.toString();
 	}

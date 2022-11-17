@@ -43,5 +43,6 @@ dependencies {
   testImplementation("org.junit.jupiter:junit-jupiter:$junit5Version")
 }
 
-test {
-    useJUnitPlatform()
+test{
+useJUnitPlatform()
+}
